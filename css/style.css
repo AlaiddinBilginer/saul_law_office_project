@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  opacity: 0.8;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+  width: 100%;
+  position: fixed;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 10px 13px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #0074f1;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+/* Header */
+.hero {
+  background: url('../images/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.hero .content h1 {
+  font-size: 50px;
+  color: #ecffff;
+}
+
+.hero .content p {
+  font-size: 23px;
+  margin: 20px 0 30px;
+  color: #ecffff;
+  opacity: 0.9;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero * {
+  z-index: 1;
+}
+
+/* Icons */
+.icons {
+  padding: 30px;
+}
+.icons i{
+  padding: 20px;
+  background-color: #00a6fb;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  color: #ecffff;
+}
+
+.icons h3 {
+  margin-bottom: 13px;
+  font-weight: bolder;
+}
+
+/* Pictures */
+.pictures img:hover {
+  opacity: 0.6;
+}
+
+/* Team */
+.team {
+  color: #333;
+}
+.team img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+/* Contact */
+.contact form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .form-group input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: 1px solid #f5f5f5;
+}
+
+.contact .form-group input:focus {
+  outline-color: #c1752f;
+}
+
+.contact button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Hero Blog */
+.hero.blog {
+  height: 40vh;
+  background: url('../images/blog-2.jpg') no-repeat center center/cover;
+}
+
+.hero.blog .content h1{
+  padding: 5px;
+  border: 1px solid #f5f5f55d;
+  margin-top: 60px;
+}
+
+/* Post */
+.post {
+  color: #333;
+  padding: 50px 40px;
+}
+
+.post h2 {
+  padding: 5px 0;
+  border-bottom: 1px solid #0074f1;
+}
+
+.post img {
+  width: 60%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10%;
+}
+
+/* Hero Expectation */
+.hero.expectation {
+  background: url('../images/SaulGoodman.jpg') no-repeat center center/cover;
+}
+
+.hero.expectation h2 {
+  font-size: 40px;
+  color: #ecffff;
+}
+
+/* Explanation */
+.explanation {
+  color: #333;
+}
+
+.explanation .container {
+  padding: 50px;
+}
+
+.explanation h2 {
+  padding: 10px 0;
+  border-bottom: 1px solid #0074f1;
+}
+
+/* Comments */
+.comments h2 {
+  margin-bottom: 30px;
+}
+
+.comments .container {
+  padding: 50px;
+}
+.comments .person img {
+  width: 200px;
+}
+
+.comments .person {
+  border: 1px solid #0074f1;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.comments .person img {
+  margin-right: 15px;
+  border-radius: 40%;
+}
+
+.comments .person > .person-photo p {
+
+  text-align: center;
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 30px;
+}
+
+footer a {
+  padding: 10px;
+}
+
